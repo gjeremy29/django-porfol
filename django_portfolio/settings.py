@@ -34,6 +34,11 @@ RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
+STATICFILES_DIRS = [
+    '/opt/render/project/src/staticfiles/',
+    # otras rutas donde se encuentran tus archivos estáticos
+]
+
 
 # Application definition
 
